@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontawesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+     <title>Fitness - Star Gym</title>
+</head>
+<body>
+    <!-- header tag  start-->
+    <header>
+
+       <div id="navbar">
+
+            <div class="logo"><img src="images/fitness logo.png" alt=""></div>
+
+            <div class="wrapper" id="menu">
+
+                <!-- start nav link -->
+                <div class="nav-link">
+                    <ul>
+                    <li><a class="home nav-a" href="index.html">Home</a></li>
+                    <li><a class="nav-a active" href="classes.html">Classes </a></li>
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                    <li><a class="nav-a" href="products.html">Products</a></li>
+                    <li><a class="nav-a" href="blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <button class="open-button" onclick="openForm()">Join Us</button>
+            </div>
+
+            <div id="x-btn" onclick="close_nav()">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        
+        </div>
+
+        <div id="menu-bar" onclick="open_menu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+            
+       </div>
+    </header>
+    <!-- header tag end -->
+
+    <!-- section start -->
+    <section>
+        <div class="classes">
+
+            <!-- img background first start-->
+            <div class="img-container" style="background-image: url('images/bg 1.jpg');">
+                <h1>Our Classes</h1>
+                <div class="class">
+
+                    <div class="class-img">
+                        <img src="images/gym3.jpg" alt="">
+                        <h2>6:30 - 7:30 AM</h2>
+                        <p>Power Excello</p>
+                    </div>
+
+                    <div class="class-img"> 
+                        <img src="images/girl-with-ball.png" alt="">
+                        <h2>6:30 - 7:30 AM</h2>
+                        <p>Mixed-Level Excello</p>
+                    </div>
+
+                    <div class="class-img">
+                        <img src="images/gym4.jpg" alt="">
+                        <h2>6:30 - 7:30 AM</h2>
+                        <p>Beginner Level</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- img background second end -->
+
+            <!-- img background second start-->
+            <div class="img-container"  style="background-color: white;">
+                <h1 id="head-partner">Our Training Partners</h1>
+
+                <div class="class partner-cls">
+
+                    <div class="class-img prt-grp">
+                        <img class="img-partner" src="images/img1.jpg" alt="">
+                        <p class="name">John smith</p>
+                    </div>
+                    <div class="class-img prt-grp">
+                        <img class="img-partner" src="images/img2.jpg" alt="">
+                        <p class="name">Anais Louis</p>
+                    </div>
+                    <div class="class-img prt-grp">
+                        <img class="img-partner" src="images/aaron-brogden-miCR9VIQ5PE-unsplash.jpg" alt="">
+                        <p class="name">Phil Heath</p>
+                    </div>
+
+                </div>
+
+                <div class="orange-bg-box">
+                    
+                </div>
+
+                
+            </div>
+            <!-- img background second end -->
+            
+            <!-- img background third start -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/bruce-mars-HHXdPG_eTIQ-unsplash.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="images/bruce-mars-WGN6ZEFEZbs-unsplash.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="images/dylan-gillis-YJdCZba0TYE-unsplash.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt="" srcset=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                });
+              </script>
+            <!-- img background third end -->
+        </div>
+    
+    </section>
+    <!-- section end    -->
+
+    <!-- footer tag start -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-logo-box">
+                <img src="images/fitness-logo.png" alt="">
+                <h2>
+                    Prioritize Your Fitness Goals with our world class Services
+                </h2>
+            </div>
+
+            <div class="footer-box">
+                <div class="company">
+                    <ul>
+                        <li>COMPANY</li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <ul>
+                        <li>CONTACT</li>
+                        <li><a href="">Help/FAQs</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Mobile</a></li>
+                    </ul>
+                </div>
+
+                <div class="more">
+                    <ul>
+                        <li>MORE</li>
+                        <li><a href="">Programs</a></li>
+                        <li><a href="">Plans </a></li>
+                        <li><a href="">Method</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="popular-tags">
+                    <h3>Popular Tags</h3>
+
+                    <div class="btn-tag">
+                        <button type="button" style="background-color: grey;">ABS</button>
+                        <button type="button" style="background-color: grey;">Workout</button>
+                        <button type="button" style="background-color: rgb(255,165,0);">Nutrition</button>
+                        <button type="button" style="background-color: rgb(255,165,0);">ABS</button>
+                        <button type="button" style="background-color: grey;">Boxing</button>
+                        <button type="button" style="background-color: rgb(255,165,0);">Trainers</button>
+                        <button type="button" style="background-color: grey;">Facilities</button>
+                    </div>
+                </div>
+
+        </div>
+
+        <h3 id="footer-copyright">
+            Copyright All Rights Reserved
+        </h3>
+    </footer>
+    <!-- footer tag end -->
+
+    <div class="form-popup" id="myForm" >
+        <form action="" class="form-container">
+            <h1>Subscription Plan</h1>
+            <a class="btn cancel" onclick="closeForm()"><i class="fa-solid fa-close"></i></a>
+
+
+            <div class="input">
+
+            <label for="name">Full Name</label><br>
+            <input type="text" placeholder="enter name" name="name" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="enter name" name="email" required><br>
+
+            <label for="name">Mobile No</label><br>
+            <input type="text" placeholder="enter name" name="phone" required><br>
+
+            <label for="name">Duration</label><br>
+            <div>
+                <input type="radio" name="duration" required><span>Monthly</span></input>
+                <input type="radio" name="duration" required><span>Yearly</span> <br><br></input>
+            </div>
+
+            <label for="name">Mode of payment</label><br>
+            <div>
+                <input type="radio" name="duration" required><span>Cash</span>
+                <input type="radio" name="duration" required><span>Online</span> <br><br>
+            </div>
+
+            <label for="name">Personal Training</label><br>
+            <div>
+                <input type="radio" name="duration" required><span>Required</span>
+                <input type="radio" name="duration" required><span>Not Required</span> <br><br>
+            </div>
+            <input type="radio" name="duration" required><small style="font-size: 12px; margin-left: 5px;">I accept all terms and conditions provided in this form.</small>
+
+            <button type="submit" class="btn">BUY PLAN</button>
+
+            </div>
+        </form>
+    </div>
+    </body>
+    
+    <script src="js/newjs.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+
+
+<!-- <script src="js/newjs.js"></script> -->
+<script src="https://kit.fontawesome.com/eb9b9a297e.js" crossorigin="anonymous"></script>
+</html>
